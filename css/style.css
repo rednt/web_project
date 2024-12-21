@@ -10,6 +10,11 @@
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +90,7 @@ body{
     width: 100%;
     outline: none;
 }
+
 
 .form-container{
     position: absolute;
@@ -208,3 +214,4 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
