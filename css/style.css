@@ -288,15 +288,18 @@ a{
     transform: translate(-50%, -50%);
 }
 .main-text h1{
-    padding-bottom: 1em;
+    margin-bottom: 1.5em;
     font-weight: bold;
     font-size: 44px;
+    width: 20em;
 }
 .main-text p{
-    font-weight: lighter;
+    font-weight: normal;
     text-align: center;
     font-size: 24px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    font-family: poppins-medium;
+    width: 30em;
 }
 .acheter1 {
     display: inline-block;
@@ -310,7 +313,7 @@ a{
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    width: 80%;
+    width: 60%;
 }
   
 .acheter1 span {
