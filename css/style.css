@@ -273,7 +273,9 @@ a{
 .cagnotte:visited{
     color: #22201f;
 }
-
+.cagnotte:link{
+    color: #22201f;
+}
 .main-text{
     width: 60%;
     display: flex;
