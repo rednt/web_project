@@ -219,7 +219,7 @@ body{
 }
 body{
     height: 100%;
-    background: linear-gradient(to right, #f8e2d2, #eb7b40);
+    background-color: #FFFFFF;
 }
 
 a{
@@ -231,9 +231,33 @@ a{
 .container-topnav{
     display: flex;
     justify-content: space-around;
-    margin-top:3em ;
+    padding-top:3em ;
 }
 
+.section1{
+    height: 100vh;
+    background: linear-gradient(to right, #f8e2d2, #eb7b40);
+}
+.section2{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.section3{
+    height: 100vh;
+    background: linear-gradient(to right, #f8e2d2, #eb7b40);
+}
+.section4{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.section5{
+    height: 100vh;
+    background: linear-gradient(to right, #f8e2d2, #eb7b40);
+}
+.section6{
+    height: 100vh;
+    background-color: #ffffff;
+}
 .logo{
     width: 5em;
 }
@@ -269,6 +293,7 @@ a{
 }
 .cagnotte img{
     display: inline-block;
+
 }
 .cagnotte:visited{
     color: #22201f;
