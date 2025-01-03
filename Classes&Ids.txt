@@ -1,0 +1,14 @@
+Classes:
+
+Sections : section1(header) --> section6(footer)
+navigation bar: container-topnav 
+logo : logo
+links : link
+Creer une cagnotte: cagnotte
+panier : panier
+welcome page text : main-text
+rest of texts : main-text2
+acheter une carte cadeau(button) : acheter1
+buttons : button
+images : image
+section5 specific : content + item

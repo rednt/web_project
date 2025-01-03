@@ -240,18 +240,7 @@ a{
 }
 
 
-.section4{
-    height: 100vh;
-    background-color: #ffffff;
-}
-.section5{
-    height: 68vh;
-    background: linear-gradient(to right, #f8e2d2, #eb7b40);
-}
-.section6{
-    height: 18.5vh;
-    background-color: #f8e2d2;
-}
+
 .logo{
     width: 5em;
 }
@@ -275,7 +264,7 @@ a{
 }
 .link:hover{
     
-    color: #30241d;
+    color: #f3f7fa;
     font-weight: bolder;
 }
 
@@ -408,8 +397,8 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #faf6f4;
     box-sizing: border-box;
+    background: #f8ece4;
 
 }
 
@@ -431,7 +420,7 @@ a{
 }
 
 
-.main-text2 , .infoImg{
+.main-text2 , .image{
     flex: 1; 
     max-width: 50%; 
 }
@@ -452,27 +441,95 @@ a{
     width: 20%;
 }
 
-.infoImg{
+.image{
     padding: 10px;
     height: auto;
     display: inline-block;
     flex: none;
 }
 
-.infoImg img{
+.image img{
     display: block;
     max-width: 100%;
     height: auto;
 }
 
 .section3{
+    height: 100vh;
     background: linear-gradient(to right, #f8e2d2, #eb7b40);
     min-height: 100vh; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
+}
 
+.section4{
+    height: 100vh;
+    background: #f8ece4;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 
+.section6{
+    height: 17vh;
+    background-color: #14100d;
+}
+
+.section6 p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.section5{
+    height: 50vh;
+    background: linear-gradient(to right, #f8e2d2, #eb7b40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section5 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; 
+}
+
+.content {
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px; 
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.item img {
+    max-width: 100%; 
+}
+
+.item h2 {
+    font-size: 2rem;
+    margin: 10px 0; 
+}
+
+.item p {
+    font-size: 1rem;
+    margin: 10px 0; 
+    max-width: 200px; 
+    font-weight: bold;
+}
