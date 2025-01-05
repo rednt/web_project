@@ -36,6 +36,28 @@ window.addEventListener('scroll', handleScroll);
 
 window.addEventListener('DOMContentLoaded', handleScroll);
 
+/*Comment ca marche q&a */
+
+const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = question.classList.contains('open');
+
+                document.querySelectorAll('.question.open').forEach(q => {
+                    q.classList.remove('open');
+                    q.nextElementSibling.style.maxHeight = 0;
+                    q.nextElementSibling.style.opacity = 0;
+                });
+
+                if (!isOpen) {
+                    question.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.opacity = 1;
+                }
+            });
+        });
 
 
 

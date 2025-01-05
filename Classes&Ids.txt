@@ -1,4 +1,9 @@
 
+
+commun::
+
+
+
 id : Sections : section1(header) --> section6(footer)
 class : section
 
@@ -23,3 +28,15 @@ buttons : button
 images : image
 
 section5 specific : content + item
+
+
+
+commentCaMarche.html::
+
+
+
+class : arrow 
+
+container (grid) | qa-item | question | answer
+
+
