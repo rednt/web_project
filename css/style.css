@@ -22,6 +22,27 @@ a{
     
 }
 
+ /* Custom scrollbar */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f8e2d2;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #e76621;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } 
+
+/* Sidebar style */
+
 :root {
     --text: #c5c5d1;
     --background: #29231841;
@@ -30,7 +51,7 @@ a{
     --accent: #494969;
   }
 
-/* Sidebar style */
+
 
 #sidebar {
     position: fixed;
