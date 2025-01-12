@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
     transition: all ease 0.1s;
 }
-body{
+body,.cagnottebod{
     height: 100%;
     background-color: #f8ece4;
     margin: 0;

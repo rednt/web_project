@@ -284,6 +284,8 @@ form button:hover {
     flex-direction: column;
     justify-content: space-around;
     height: 60vh;
+    height: auto;
+    overflow: visible;
 }
 
 
