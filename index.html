@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Gifty : Cagnotte et cartes cadeaux</title>
     <link rel="shortcut icon" href="assets/gift-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style1.css">
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -25,11 +26,10 @@
                     <div class="logo">
                         <a href="#"><img src="assets/gift-logo.svg" alt="logo"></a>
                     </div>
-                    <a href="#" class="link">Carte cadeau</a>
-                    <a href="#" class="link">Partenaires</a>
-                    <a href="#" class="link">Sign-up</a>
-                    <button class="cagnotte"><img src="assets/plus-large.svg" alt="" width="20p"><span>CREER UNE CAGNOTTE</span></button>
-                    <a href="#" class="panier"><img src="assets/basketEmpty.svg" alt="" width="30p"></a>
+                    <a href="html/Cartecadeau.html" class="link">Carte cadeau</a>
+                    <a href="html/nosPartenaires.html" class="link">Partenaires</a>
+                    <a href="/html/Login.html" class="link">Sign-up</a>
+                    <button class="cagnotte" ><img src="assets/plus-large.svg" alt="" width="20p"><span>CREER UNE CAGNOTTE</span></button>
                 </div>
             </nav>
         </header>
@@ -37,7 +37,7 @@
         <div class="main-text">
                 <h1>Créez une Cagnotte en Ligne en Toute Simplicité</h1>
                 <p>Collectez des fonds facilement pour vos événements, cadeaux communs ou projets. Transparent, rapide et 100% sécurisé.</p>
-                <button class="acheter1" style="vertical-align:middle"><span>Acheter une carte cadeau </span></button>
+                <button class="acheter1" style="vertical-align:middle" onclick="window.location.href = 'html/Cartecadeau.html';"><span>Acheter une carte cadeau </span></button>
         </div>
         </section>
         
@@ -115,6 +115,8 @@
             <p>Groupe 6</p>
         </div>
     </footer> 
+
+    <script src="js/Scriptpanier.js"></script>
 
 </body>
 

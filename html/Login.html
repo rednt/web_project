@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="script.js"></script>
-    <title>Modern Login Page </title>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container" id="container">
-        <div class="form-container sign-up" id="register">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in" id="login">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site features</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
+    <header>
+        <nav>
+            <div class="container-topnav">
+                <div class="arrow" onclick="window.location.href = '../index.html';"></div>
+                <a href="Cartecadeau.html" class="link">Carte cadeau</a>
+                <a href="nosPartenaires.html" class="link">Partenaires</a>
+                <a href="#" class="link">Sign-up</a>
+                <button class="cagnotte"><img src="../assets/plus-large.svg" alt="" width="20p"><span>CREER UNE CAGNOTTE</span></button>
+                <a href="#" class="panier"><img src="../assets/basketEmpty.svg" alt="" width="30p"></a>
             </div>
+        </nav>
+    </header>
+    
+    <div class="auth-container">
+        <!-- Login Form -->
+        <div class="auth-box" id="login-box">
+          <h2 class="auth-title">Login</h2>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" required>
+            </div>
+            <button type="submit" class="auth-button">Login</button>
+            <p class="auth-footer">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+          </form>
         </div>
-    </div>
+      
+        <div class="auth-box hidden" id="signup-box">
+          <h2 class="auth-title">Sign Up</h2>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="auth-button">Sign Up</button>
+            <p class="auth-footer">Already have an account? <a href="#" id="show-login">Login</a></p>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div id="section6" class="section">
+            <p>Site réalisé par: Akermi Souhail-Ridha Samhoun-Mohamed Moayed Souissi</p><br>
+            <p>Groupe 6</p>
+        </div>
+    </footer> 
 
-
+      <script src="../js/script.js"></script>
+            
+      
 </body>
-
 </html>
