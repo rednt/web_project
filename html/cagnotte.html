@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une Cagnotte</title>
+    <link rel="stylesheet" href="cagnotte.css">
+    <script src="cagnotte.js" defer></script>
+</head>
+<body>
+    <center><h1>Cagnotte Solidaire Pour Palestine</h1></center>
+    <main>
+        <div class="steps">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+        </div>
+        <!-- Step 1 -->
+        <div id="step1" class="step-container active">
+            <h2>La Cagnotte</h2>  
+            <form>
+                <label for="typeEvenement">Sélectionnez une carte :</label>
+                <select id="typeEvenement" name="typeEvenement">
+                    <option >--choisissez une carte--</option>
+                    <option >Expert Gaming </option>
+                    <option >Jumpark</option>
+                    <option >Movenpick Gammarth Tunis</option>
+                    <option >Slim Fit</option>
+                    <option >Librairie Al kitab</option>
+                    <option >Patisserie Madame Jedidi</option>
+                    <option >Sherrington</option>
+                    <option >LC Waikiki</option>
+                    <option >Sophia Beauty & Spa</option>
+                </select>
+                <label for="message">Message (optionnel):</label>
+                <textarea id="message" name="message" placeholder="Ajoutez un message..." maxlength="180" oninput="updateCounter()"></textarea>
+                <div id="charCounter">0/180</div>
+                <center><button type="button" id="creerCagnotteBtn">Validé cette étape</button></center>
+            </form>
+        </div>
+        <!-- Step 2 -->
+        <div id="step2" class="step-container">
+            <form id="step2Form">
+                <h2>IDENTIFICATION</h2>
+                <label for="prenom">Prénom*</label>
+                <input type="text" id="prenom" placeholder="Votre prénom" required>
+                <label for="nom">Nom*</label>
+                <input type="text" id="nom" placeholder="Votre nom" required>
+                <label for="dateNaissance">Date de naissance*</label>
+                <input type="date" id="dateNaissance" required>
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Votre adresse email" required>
+                <label for="motDePasse">Mot de passe*</label>
+                <div class="password-container">
+                    <input type="password" id="motDePasse" placeholder="Votre mot de passe" required>
+                </div>
+                <button type="button">Valider cette étape</button>
+                <button type="submit">Retour</button>     
+            </form>
+        </div>
+        <!-- Step 3 -->
+<div id="step3" class="step-container">
+    <form id="step3Form">
+        <h2>Paiement</h2>
+        
+        <label for="cardNumber">Numéro de Carte</label>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="16" required>
+        
+        <div class="row">
+            <div>
+                <label for="month">Mois</label>
+                <input type="text" id="month" placeholder="MM" maxlength="2" required>
+            </div>
+            <div>
+                <label for="year">Année</label>
+                <input type="text" id="year" placeholder="AA" maxlength="4" required>
+            </div>
+            <div>
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123" maxlength="3" required>
+            </div>
+        </div>
+        <div class="summary">
+            <p>De La Cagnotte pour le cadeau <span>95%</span></p>
+            <p>Pour une prise Noble <span>05%</span></p>
+        </div>
+        <button type="submit" id="confirmPaymentBtn">Confirmer le Cagnotte</button>
+    </form>
+</div>
+  </main>
+</body>
+</html>
+
