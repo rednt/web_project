@@ -1,9 +1,10 @@
 body {
-    background-color: #eecebd; 
+    background-color: #efefef; 
     font-family: 'Montserrat', sans-serif;
+    
 } 
 
-.container-partners {
+.container {
     width: 1000px; 
     margin: auto; 
     transition: 0.5s;
@@ -13,25 +14,25 @@ body {
     -o-transition: 0.5s;
 }
 
-.container-partners h1 {
-    color: #c54e0e;
+.container h1 {
+    color: #560bad;
     text-align : center;
 
 }
 
-.container-partners header {
+.container header {
     display: grid;
     grid-template-columns: 1fr 50px;
     margin-top: 50px;
 } 
-.container-partners header nav .np{
+.container header .np{
     position: relative;
     text-align: right;
 }
 
 .np i {
-    font-size: 2rem;
-    color: #000000; 
+    font-size: 3rem;
+    color: #560bad; 
     cursor: pointer; 
     transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
@@ -41,11 +42,11 @@ body {
 }
 
 .np i:hover {
-    color: #eb7b40;
+    color: #7842b7;
 }
 
 .np span {
-    background: rgb(121, 44, 0); 
+    background: red; 
     border-radius: 50%; 
     -webkit-transition-raduis: 50%;
     -moz-transition-raduis: 50%;
@@ -61,7 +62,7 @@ body {
     padding: 3px 10px;
 }  
 
-.container-partners .list {
+.container .list {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -74,7 +75,7 @@ body {
     left: 100%; 
     width: 500px; 
     background-color: #dadada; 
-    border-left: 1px solid #7c4302; 
+    border-left: 1px solid #560bad; 
     height: 100vh;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -86,17 +87,16 @@ body {
 .active .card {
     left: calc(100% - 500px);
 }
-.active .container-partners{
-    transform: translate(-500px);
-    -webkit-transform:translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
+.active .container{
+    transform: translate(-200px);
+    -webkit-transform:translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
 }
 
-
 .card h1 {
-    color: #af4308;
+    color: #560bad;
     font-weight: 300; 
     margin: 0;
     padding:0, 20px;
@@ -114,7 +114,7 @@ body {
 }
 
 .card .checkOut div {
-    background-color: #eb7b40; 
+    background-color: #560bad; 
     color: #fff; 
     width:100%;
     height: 70px;
@@ -133,7 +133,7 @@ body {
 text-align: center;
 background-color:#efefef;
 padding: 20px;
-box-shadow: 0 50px 50px#837f78;
+box-shadow: 0 50px 50px#757676;
 letter-spacing: 1px;
 transition: all 0.25s ease;
 -webkit-transition: all 0.25s ease;
@@ -148,7 +148,7 @@ border-radius: 8px;
 cursor: pointer;
 }
 .list .item:hover{
-    background-color: #eb7b40;
+    background-color: #7842b6;
 
 }
 
@@ -168,12 +168,12 @@ cursor: pointer;
     color: #efefef;
 }
 .list .item button {
-    background-color: #eb7b40;
-    color: #e6bfab;
+    background-color: #efefef;
+    color: #560bad;
     font-size: 1rem;
     font-weight: 600;
     width: 100%;
-    border: 3px,solid #eb7b40;
+    border: 3px,solid #560bad;
     padding: 10px 20px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -189,7 +189,7 @@ cursor: pointer;
 }
 
 .list .item button:hover {
-    background-color: #eb7b40;
+    background-color: #560bad;
     color: #efefef;
 }
 .listcard li {
@@ -205,19 +205,19 @@ cursor: pointer;
 }
 .listcard .count{
     margin: 0px 10px;
-    color: #22201d;
+    color: #1c1f25;
 
 }
 .listcard li img {
     width: 90%;
 }
 .cardTitle,.cardprice{
-    color: #0e0d0d;
+    color: #1c1f25;
 }
 .cardButton{
     width: 20px;
     height: 20px;
-    color: #f0f0f0;
+    color: #1c1f25;
     font-size: 1.5rem;
     font-weight: 500;
     -webkit-border-radius: 50%;
@@ -243,17 +243,17 @@ cursor: pointer;
 
 .list .item button {
     background-color: #efefef;
-    color: #eb7b40;
+    color: #560bad;
     font-size: 1rem;
     font-weight: 600;
-    border: 3px solid #ee7737;
+    border: 3px solid #560bad;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
 }
 
 .list .item button:hover {
-    background-color: #e4580d;
+    background-color: #560bad;
     color: #efefef;
 }
 
@@ -267,6 +267,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
 .listCard li img {
@@ -298,12 +299,12 @@ cursor: pointer;
 }
 
 .Popup-content h2 {
-    color: #eb7b40;
+    color: #560bad;
     margin-bottom: 10px;
 }
 
 .close-btn {
-    color: #614111;
+    color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -327,7 +328,7 @@ cursor: pointer;
 
 .amount-buttons button,
 .manual-amount button {
-    background-color: #c54e0e;
+    background-color: #560bad;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -339,12 +340,12 @@ cursor: pointer;
 
 .amount-buttons button:hover,
 .manual-amount button:hover {
-    background-color: #7c4302;
+    background-color: #7842b7;
 }
 
 .manual-amount input {
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #ccc;
     border-radius: 8px;
     margin-right: 10px;
     width: 150px;
@@ -357,4 +358,3 @@ cursor: pointer;
     object-fit: cover;
     margin-right: 10px;
 }
-

@@ -41,7 +41,7 @@ const initApp = () => {
         newDiv.classList.add("item");
 
         newDiv.innerHTML = `
-            <img src="../assets/photo/${value.images}" alt="${value.name}">
+            <img src="photo/${value.images}" alt="${value.name}">
             <div class="title">${value.name}</div>
             <button class="open-amount-modal" data-key="${key}">
                 <i class="fa fa-money-bill"></i> Ajouter un montant
@@ -79,7 +79,7 @@ const reloadCart = () => {
     listCards.forEach((value) => {
         let newDiv = document.createElement("li");
             newDiv.innerHTML = `
-                <div><img src="../assets/photo/${value.images}"></div>
+                <div><img src="photo/${value.images}"></div>
                 <div class="cardTitle">${value.name}</div>
                 <div>${value.amount.toFixed(2)} TND</div>
         `;
@@ -122,8 +122,6 @@ window.addEventListener("click", (event) => {
 
 // Initialisation
 initApp();
-
-
 
 
 

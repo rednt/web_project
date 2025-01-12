@@ -1,0 +1,44 @@
+
+  
+  .footer {
+    position: relative;
+    background: #49230e;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .footer .wave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: #8b3e14;
+    border-radius: 100%;
+    animation: waveAnimation 5s infinite linear;
+  }
+  
+  .footer-text {
+    padding: 50px 20px;
+    animation: bounceText 3s infinite ease-in-out;
+  }
+  
+  .footer-text p {
+    color: #bea99e;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes waveAnimation {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  @keyframes bounceText {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
