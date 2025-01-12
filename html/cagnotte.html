@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer une Cagnotte</title>
-    <link rel="stylesheet" href="cagnotte.css">
-    <script src="cagnotte.js" defer></script>
+    <link rel="stylesheet" href="../css/cagnotte.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footercss.css">
+    <script src="../js/cagnotte.js" defer></script>
 </head>
 <body>
+    <div id="section1" class="section">
+        <header>
+            <nav>
+                <div class="container-topnav">
+                    <div class="arrow" onclick="history.back()"></div>
+                    <a href="Cartecadeau.html" class="link">Carte cadeau</a>
+                    <a href="nosPartenaires.html" class="link">Partenaires</a>
+                    <a href="Login.html" class="link">Sign-up</a>
+                    <button class="cagnotte" onclick="window.location.href = '#'"><img src="../assets/plus-large.svg" alt="" width="20p"><span>CREER UNE CAGNOTTE</span></button>
+                </div>
+            </nav>
+        </header>
     <center><h1>Cagnotte Solidaire Pour Palestine</h1></center>
     <main>
         <div class="steps">
@@ -43,19 +57,19 @@
             <form id="step2Form">
                 <h2>IDENTIFICATION</h2>
                 <label for="prenom">Prénom*</label>
-                <input type="text" id="prenom" placeholder="Votre prénom" required>
+                <input type="text" id="prenom" placeholder="Votre prénom" >
                 <label for="nom">Nom*</label>
-                <input type="text" id="nom" placeholder="Votre nom" required>
+                <input type="text" id="nom" placeholder="Votre nom" >
                 <label for="dateNaissance">Date de naissance*</label>
-                <input type="date" id="dateNaissance" required>
+                <input type="date" id="dateNaissance">
                 <label for="email">Email*</label>
-                <input type="email" id="email" placeholder="Votre adresse email" required>
+                <input type="email" id="email" placeholder="Votre adresse email" >
                 <label for="motDePasse">Mot de passe*</label>
                 <div class="password-container">
-                    <input type="password" id="motDePasse" placeholder="Votre mot de passe" required>
+                    <input type="password" id="motDePasse" placeholder="Votre mot de passe">
                 </div>
                 <button type="button">Valider cette étape</button>
-                <button type="submit">Retour</button>     
+                <button id="backToStep">Retour</button>     
             </form>
         </div>
         <!-- Step 3 -->
@@ -85,9 +99,20 @@
             <p>Pour une prise Noble <span>05%</span></p>
         </div>
         <button type="submit" id="confirmPaymentBtn">Confirmer le Cagnotte</button>
+        <button id="backToStep">Retour</button>  
     </form>
 </div>
   </main>
+  <div id="section6" class="section">
+    <footer class="footer">
+        <div class="wave"></div>
+            <div class="footer-text">
+                <p>Site réalisé par: Akermi Souhail-Ridha Samhoun-Mohamed Moayed Souissi</p>
+                <p>Groupe 6</p>
+            </div>
+
+    </footer>
+</div>
 </body>
 </html>
 

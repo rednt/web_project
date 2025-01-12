@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const steps = document.querySelectorAll(".step");
     const stepContainers = document.querySelectorAll(".step-container");
     const nextBtns = document.querySelectorAll(".step-container button[type='button']");
-    const backBtns = document.querySelectorAll(".step-container button[id^='backToStep']");
+    const backBtns = document.querySelectorAll(".step-container button[id='backToStep']");
 
     let currentStep = 0;
     function showStep(stepIndex) {
