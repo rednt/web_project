@@ -158,9 +158,6 @@ header nav{
 .link:visited{
     color: #22201f;
 }
-.link:active{
-    color: #ffffff;
-}
 
 .link{
     text-decoration: none;
@@ -171,7 +168,7 @@ header nav{
 }
 .link:hover{
     
-    color: #f3f7fa;
+    color:rgb(107, 72, 27);
     font-weight: bolder;
 }
 
@@ -303,30 +300,31 @@ header nav{
     align-items: center;
     box-sizing: border-box;
     background: #f8ece4;
-    
+    padding: 20px;
 }
 
 .main-text2{
-    padding: 10px;
+    padding: 40px;
     flex: none;
+    max-width: 45%;
 }
 
 .main-text2 h1{
     text-align: justify;
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 1.5em;
 }
 .main-text2 p{
     text-align: justify;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 1em;
-    width: 70%;
+    width: 90%;
 }
 
 
 .main-text2 , .image{
     flex: 1; 
-    max-width: 50%; 
+    max-width: 45%;
 }
 
 .button{
@@ -350,6 +348,7 @@ header nav{
     height: auto;
     display: inline-block;
     flex: none;
+    max-width: 45%
 }
 
 .image img {
@@ -451,7 +450,7 @@ header nav{
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
-    padding-top: 30px;
+    padding: 20px;
 }
 
 /*Comment ca marche style*/

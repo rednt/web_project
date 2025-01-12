@@ -19,7 +19,7 @@ let produits = [
     { id: 9, name: "Sophia Beauty & Spa", images: "p9.jpg", des:"✨Bienvenue chez Sophia Beauty & Spa ! ✨Contactez-nous pour réserver votre moment de détente et de beauté chez Sophia Beauty & Spa ! 💆‍♀️💅📍12 rue l’imam ibn Arafa , La Marsa☎️ 29 390 835" },
 ];
 
-const initApp = () => {
+const initAppPopup = () => {
     produits.forEach((value, key) => {
         const newDiv = document.createElement("div");
         newDiv.classList.add("item");
@@ -38,7 +38,7 @@ const initApp = () => {
     });
 };
 
-initApp();
+initAppPopup();
 const scriptButtons = document.querySelectorAll(".show-popup");
 scriptButtons.forEach((button) => {
     button.addEventListener("click", (event) => {

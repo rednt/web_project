@@ -1,6 +1,5 @@
 body {
     background-color: #eecebd; 
-    font-family: 'Montserrat', sans-serif;
     
 } 
 
@@ -85,10 +84,10 @@ body {
 } 
 
 .active .card {
-    left: calc(100% -10px);
+    left: calc(100% - 500px);
 }
 .active .container-partners{
-    transform: translate(-100px);
+    transform: translate(-500px);
     -webkit-transform:translateX(-100px);
     -moz-transform: translateX(-100px);
     -ms-transform: translateX(-100px);

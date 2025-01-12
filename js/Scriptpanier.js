@@ -26,9 +26,11 @@ let products = [
     { id: 9, name: "Sophia Beauty & Spa", images: "p9.jpg", price: 100 },
 ];
 
+
+
 let listCards = [];
 
-const initApp = () => {
+const initAppPanier = () => {
     products.forEach((value, key) => {
         const newDiv = document.createElement("div");
         newDiv.classList.add("item");
@@ -44,7 +46,7 @@ const initApp = () => {
     });
 };
 
-initApp();
+initAppPanier();
 
 const addToCard = (key) => {
     if (listCards[key] == null) {
